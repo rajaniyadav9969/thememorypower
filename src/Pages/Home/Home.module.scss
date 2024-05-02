@@ -139,12 +139,16 @@
 
         .images {
             position: relative;
-            margin-top: 6rem;
+
+            @media screen and (max-width: 768px) {
+
+                margin-top: 6rem;
+            }
 
             >img {
                 position: absolute;
                 // transform: translate(-50%, -10%);
-                transform: translate(-50%, -6%);
+                transform: translate(-50%, -16%);
                 left: 50%;
                 object-fit: cover;
                 top: 0;
