@@ -1,0 +1,50 @@
+.memoryPower {
+    background: var(--pricolor);
+
+    >div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+
+        @media screen and (max-width: 768px) {
+            display: block;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+
+        p {
+            margin-bottom: 0;
+            font-weight: 700;
+            font-size: 1.25rem;
+            color: #fff;
+
+            @media screen and (max-width: 768px) {
+                margin-bottom: 1.4rem;
+            }
+        }
+
+        button {
+            margin: 0;
+            box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 1px -2px, rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px;
+            border: none;
+            border-radius: 0.4rem;
+            padding: 8px 22px;
+            background: #fff;
+            color: var(--pricolor);
+            text-transform: capitalize;
+
+            a {
+                text-decoration: none;
+                color: var(--pricolor);
+
+            }
+
+            span {
+                padding-right: 6px;
+            }
+        }
+
+    }
+}

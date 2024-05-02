@@ -1,0 +1,104 @@
+.container {
+    position: relative;
+    margin: 4rem 0;
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        >img {
+            position: absolute;
+            width: min(90%, 500px);
+
+            &:nth-child(1) {
+                left: -50px;
+                bottom: 0;
+                transform: rotate(210deg);
+            }
+
+            &:nth-child(2) {
+                right: 0;
+                top: 0;
+            }
+        }
+
+        >div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            b {
+                font-size: 18px;
+            }
+
+            p {
+                color: var(--seccolor);
+                margin-top: 1rem;
+
+            }
+
+            input {
+                background: transparent;
+                border: 1px solid #c4bbb4;
+                padding: 6.5px 14px;
+                border-radius: 4px;
+            }
+
+            >div {
+                display: flex;
+            }
+
+            >.bottom {
+                width: 100%;
+                gap: 1rem;
+                display: flex;
+                align-items: flex-start;
+                justify-content: space-between;
+
+                @media screen and (max-width: 768px) {
+                    display: block;
+
+                }
+
+                >* {
+                    flex: 1;
+                }
+
+                button {
+                    margin-top: 2rem;
+                }
+
+            }
+
+            .avatars {
+                margin-bottom: 3px;
+
+                >* {
+                    background-color: rgb(189, 189, 189);
+                    border-radius: 50%;
+                    width: 50px;
+                    height: 50px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-right: -10px;
+                    border: 1px solid white;
+                }
+            }
+
+            .logo {
+                margin: 1rem 0;
+                background-color: rgb(189, 189, 189);
+                border-radius: 50%;
+                width: 60px;
+                height: 60px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 1.4rem;
+                color: #fff;
+            }
+        }
+    }
+}

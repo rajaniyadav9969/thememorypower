@@ -1,0 +1,140 @@
+.headerSection {
+    nav {
+        width: 100%;
+        position: sticky;
+        top: 0;
+        padding: .3rem 1.5rem 0;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px -1px, rgba(0, 0, 0, 0.14) 0px 4px 5px 0px, rgba(0, 0, 0, 0.12) 0px 1px 10px 0px;
+        background-color: #fff !important;
+
+        @media screen and (max-width: 768px) {
+            padding: 0;
+        }
+
+        .imglogo {
+            @media screen and (max-width: 768px) {
+                padding: 0;
+                margin: 0;
+            }
+
+            img {
+                width: 170px;
+                margin-bottom: 1rem;
+
+                @media screen and (max-width: 768px) {
+                    width: 140px;
+                    padding: 5px;
+                }
+            }
+        }
+
+        .expandBtn {
+            border: none;
+            padding: 0;
+
+            &:focus {
+                box-shadow: none;
+            }
+        }
+
+
+    }
+
+}
+
+.bodySection {
+    justify-content: end;
+
+    >div {
+        flex-basis: auto;
+        flex-flow: wrap;
+        align-items: center;
+
+        @media screen and (max-width: 768px) {
+            align-items: flex-start;
+            justify-content: flex-start !important;
+        }
+
+    }
+
+    .dropDown {
+        >div {
+            padding: 0;
+        }
+    }
+
+    a {
+        color: rgb(107, 196, 252) !important;
+        font-weight: 700;
+        font-size: 15px;
+        padding: 8px 11px;
+        border-radius: 4px;
+        margin-right: 0.8rem;
+        text-decoration: none;
+
+        &:hover {
+            background-color: rgba(25, 118, 210, 0.04);
+        }
+
+        @media screen and (max-width: 768px) {
+            margin-right: 0;
+            color: var(--pricolor) !important;
+            margin-bottom: 0.5rem;
+        }
+
+        span {
+            padding-right: 5px;
+        }
+    }
+
+    .subMenu {
+        margin-right: 0 !important;
+        font-weight: 400;
+    }
+
+    .button {
+        border: 1px solid var(--pricolor);
+        color: var(--pricolor) !important;
+        padding: 5px 15px;
+        margin-left: 0.4rem;
+        font-weight: 400;
+
+        &:hover {
+            border: 1px solid rgb(25, 118, 210);
+        }
+
+        @media screen and (max-width: 768px) {
+            color: rgb(107, 196, 252) !important;
+            border: 1px solid rgb(107, 196, 252);
+            margin-bottom: 1rem;
+            margin-left: 0;
+            margin-top: 0.5rem;
+        }
+    }
+
+    .socialMedia {
+        color: rgb(249, 148, 211) !important;
+        font-size: 1.5rem;
+        padding: 8px;
+        border-radius: 50%;
+        display: inline-block;
+        line-height: 0;
+        margin-right: 0;
+        margin-left: 0.8rem;
+
+        span {
+            padding-right: 0;
+        }
+
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.04);
+        }
+
+    }
+
+}
+
+.offcanvasNavbar {
+    width: 240px !important;
+
+}

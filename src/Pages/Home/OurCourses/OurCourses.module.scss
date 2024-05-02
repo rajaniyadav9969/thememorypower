@@ -1,0 +1,252 @@
+.ourCoursesSection {
+    .ourCoursesContent {
+        background-image: url(../../../assets/images/clouds.png);
+        background-attachment: scroll;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        padding-bottom: 3rem;
+
+        .title {
+            font-size: 2.125rem;
+            text-align: center;
+            font-weight: 400;
+            margin: 2rem 0 4rem;
+        }
+
+        >div {
+            >div {
+                gap: 46px;
+
+                @media screen and (max-width: 768px) {
+                    gap: 36px;
+                    ;
+                }
+
+                .ourCoursesItem {
+                    position: relative;
+                    width: 31%;
+
+                    @media screen and (max-width: 768px) {
+                        width: auto;
+                    }
+
+                    .classContent {
+                        height: 150px;
+                        margin: 2px;
+                        overflow: hidden;
+                        position: absolute;
+                        width: 150px;
+                        top: -10px;
+                        left: -2px;
+
+                        @media screen and (max-width: 768px) {
+                            width: 152px;
+                            top: -10px;
+                            left: -14px;
+                        }
+
+                        span {
+                            background-color: #6cc5ff;
+                            box-shadow: 0 0 10px 0 rgba(0, 0, 0, .1);
+                            color: #fff;
+                            display: block;
+                            font: 700 18px / 1 Lato, sans-serif;
+                            opacity: .9;
+                            padding: 10px 0;
+                            position: absolute;
+                            text-align: center;
+                            text-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+                            width: 223px;
+                            z-index: 100;
+                            right: -25px;
+                            top: 30px;
+                            transform: rotate(-45deg);
+
+                            @media screen and (max-width: 768px) {
+                                width: 221px;
+                            }
+
+                            &::before,
+                            &::after {
+                                border: 5px solid #6cc5ff;
+                                content: "";
+                                display: block;
+                                position: absolute;
+                                z-index: -1;
+
+                            }
+
+                            &::before {
+                                border-top-color: transparent;
+                                top: 33px;
+                                right: 23px;
+                                transform: rotate(47deg);
+                            }
+
+                            &::after {
+                                bottom: -5px;
+                                left: 7px;
+                                border-left-color: transparent;
+                                border-top-color: transparent;
+                                transform: rotate(45deg);
+
+                                @media screen and (max-width: 768px) {
+                                    left: 3px;
+                                }
+                            }
+                        }
+                    }
+
+                    .coursesItem {
+                        background-color: #fff;
+                        box-shadow: 0 5px 40px -15px rgba(0, 0, 0, .75);
+                        border-radius: 30px;
+                        cursor: pointer;
+                        overflow: hidden;
+                        height: 100%;
+
+                        .cardimg {
+                            width: 100%;
+                        }
+
+                        .content {
+                            text-align: center;
+                            padding: 1.5rem 1rem;
+
+                            h5 {
+                                text-transform: uppercase;
+                            }
+
+                            .contnet1 {
+                                margin-bottom: 0;
+                            }
+
+                            .content2 {
+                                color: rgba(0, 0, 0, 0.6);
+                                font-size: 0.9rem;
+                            }
+
+                            .fees {
+                                font-size: 1.4rem;
+                            }
+
+                            button {
+                                width: 90%;
+                                color: var(--pricolor);
+
+                                a {
+                                    font-weight: 500;
+                                }
+
+                                img {
+                                    width: 24px;
+                                    margin-left: 0.5rem;
+                                    margin-bottom: 1rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    button {
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 1px -2px, rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px;
+        border: none;
+        border-radius: 0.4rem;
+        padding: 8px 22px;
+        background: #fff;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+        color: var(--pricolor);
+        text-transform: capitalize;
+
+        &:hover {
+            background: rgb(21, 101, 192);
+        }
+    }
+
+    .memorypowerManagTeam {
+        background: url(../../../assets/images/memory-power-management.png);
+        background-attachment: scroll;
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        padding-top: 7rem;
+        padding-bottom: 2rem;
+
+        >div {
+            .memory {
+                justify-content: center;
+                align-items: center;
+
+                @media screen and (max-width: 768px) {
+                    text-align: center;
+                }
+
+                >div {
+                    // width: 41%;
+                    position: relative;
+                }
+
+                img {
+                    width: 22rem;
+                    position: relative;
+
+                    @media screen and (max-width: 768px) {
+                        width: 75%;
+                    }
+                }
+
+                .title {
+                    font-size: 2.5rem;
+                    color: #fff;
+                    max-width: 60%;
+                    width: 58%;
+                    text-align: center;
+                    position: absolute;
+                    top: 3rem;
+                    left: 3rem;
+                    line-height: 1.7;
+
+                    @media screen and (max-width: 768px) {
+                        font-size: 19px;
+                        left: 4.5rem;
+                        top: 4rem;
+                    }
+                }
+
+                .memorypowerContent {
+                    text-align: center;
+                    color: #fff;
+                    padding: 2rem 0;
+
+                    @media screen and (max-width: 768px) {
+                        padding-bottom: 0;
+                    }
+
+                    p {
+                        font-size: 1.25rem;
+                        margin-bottom: 2rem;
+                    }
+                }
+
+                button {
+                    font-weight: 500;
+                    width: 12rem;
+                    padding: 11px 17px;
+
+                    span {
+                        padding-right: 6px;
+                    }
+                }
+            }
+        }
+
+
+    }
+}

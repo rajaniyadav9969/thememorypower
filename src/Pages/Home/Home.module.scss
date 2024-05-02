@@ -1,0 +1,180 @@
+.homeSection {
+    width: 100%;
+    overflow: hidden;
+
+    @keyframes brainAnimation {
+        1% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        100% {
+            opacity: 0;
+            transform: translateY(-100vh) rotate(180deg);
+        }
+    }
+
+    .brainImage {
+        z-index: -1;
+        padding: 0 !important;
+
+        >img {
+            position: absolute;
+            bottom: 0;
+            animation: brainAnimation 5s linear infinite;
+        }
+    }
+
+    .homeContent {
+        background: url(../../assets/images/slide_new.png);
+        background-attachment: scroll;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        --bs-gutter-x: unset;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 7rem;
+        padding-top: 3rem;
+        width: 100%;
+        overflow: hidden;
+
+        .content {
+            text-align: center;
+
+            >h3 {
+                margin: 0px;
+                font-weight: 400;
+                font-size: 2.125rem;
+                line-height: 1.235;
+                letter-spacing: 0.00735em;
+            }
+
+            >p {
+                margin: 0px;
+                font-weight: 400;
+                font-size: 1.5rem;
+                line-height: 1.334;
+            }
+
+            >div {
+                margin-top: 4rem;
+                background-color: #fff;
+                border-radius: 35px;
+                box-shadow: 0 7px 29px 0 hsla(240, 5%, 41%, .2);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 16px 25px;
+                width: 100%;
+
+                >* {
+                    font-weight: 400;
+                    line-height: 1.334;
+                    letter-spacing: 0em;
+                    color: rgb(0, 0, 0);
+                    font-size: 16px;
+                }
+
+                >p {
+                    &:first-child {
+                        font-size: 1.5rem;
+                        line-height: 1.334;
+                    }
+
+
+                }
+
+                >small {
+                    margin: 8px 0px 0px;
+                    font-weight: 400;
+                    color: rgb(108, 117, 125);
+                    letter-spacing: 1px;
+                    font-size: 14px;
+                }
+
+                .cards {
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin: 2rem 0;
+
+                    >div {
+                        flex-basis: 16.6667%;
+                        -webkit-box-flex: 0;
+                        flex-grow: 0;
+                        max-width: 16.6667%;
+                        padding: 8px;
+                        border: 1px solid #c4c4c4;
+                        cursor: pointer;
+
+                        >* {
+                            margin: 0;
+                        }
+                    }
+                }
+
+                >button {
+                    line-height: 1.75;
+                    letter-spacing: 0.02857em;
+                    border-radius: 10px;
+                    font-weight: 700;
+                    width: 100% !important;
+                }
+            }
+
+        }
+
+        >div {
+            padding: 5rem 0;
+            width: min(90%, 1200px);
+            gap: 10rem;
+            display: flex;
+
+            @media screen and (max-width: 768px) {
+                padding: 0;
+                display: block;
+            }
+        }
+
+
+        .images {
+            position: relative;
+            margin-top: 6rem;
+
+            >img {
+                position: absolute;
+                // transform: translate(-50%, -10%);
+                transform: translate(-50%, -6%);
+                left: 50%;
+                object-fit: cover;
+                top: 0;
+                border-radius: 1rem;
+
+                @media screen and (max-width: 768px) {
+                    transform: translate(-39%, 9%);
+                }
+
+                &:first-child {
+                    position: static !important;
+                    height: 100%;
+                    max-width: 100%;
+                    transform: translateX(0%);
+                }
+
+                &:nth-child(2) {
+                    // transform: translate(calc(-50% - 28px), calc(60px - 10%));
+                    transform: translate(calc(-50% - 28px), calc(16px - 10%));
+                    width: 69%;
+                }
+
+                &:nth-child(3) {
+                    width: 84%;
+                }
+            }
+
+
+        }
+    }
+
+
+}

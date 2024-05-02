@@ -1,0 +1,46 @@
+.ourKidsSection {
+    background: linear-gradient(180deg, #e4f4f6, 80%, #fff);
+
+    >div {
+        >div {
+
+            align-items: center;
+
+            @media screen and (max-width: 768px) {
+
+                flex-direction: column-reverse;
+
+                img {
+                    width: 100%;
+                    transform: translateX(-16px);
+                }
+            }
+
+            >div {
+                &:nth-child(2) {
+                    padding-left: 4rem;
+
+                    @media screen and (max-width: 768px) {
+                        padding-left: 0;
+                    }
+                }
+            }
+
+            .title {
+                font-size: 2.1rem;
+                padding: 8px;
+                border-bottom: 1px solid rgb(51 51 51 / 39%);
+
+                @media screen and (max-width: 768px) {
+                    padding: 0 0 13px;
+                }
+            }
+
+            p {
+                font-size: 1.25rem;
+            }
+        }
+    }
+
+
+}

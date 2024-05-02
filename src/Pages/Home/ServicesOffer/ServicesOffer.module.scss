@@ -1,0 +1,79 @@
+.servicesSecrion {
+    background: url(../../../assets/images/services-slide.png);
+    background-attachment: scroll;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    --bs-gutter-x: unset;
+    display: flex;
+    justify-content: center;
+    height: 48rem;
+
+    @media screen and (max-width: 768px) {
+        height: auto;
+    }
+
+    .title {
+        margin-bottom: 3rem;
+        text-align: center;
+        font-size: 2.125rem;
+
+    }
+
+    .serviceItems {
+        gap: 20px;
+        padding-bottom: 3rem;
+
+        @media screen and (max-width: 768px) {
+            padding-bottom: 5rem;
+        }
+
+        .servideOfferitem {
+            box-shadow: 0 0 10px #ccc;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            padding: 15px;
+            background: #fff;
+            width: 31.33%;
+
+            @media screen and (max-width: 768px) {
+                width: auto;
+                display: block;
+                text-align: center;
+            }
+
+            img {
+                width: 37%;
+                margin: 0 1rem 1rem 0;
+                height: fit-content;
+
+            }
+
+            >div {
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+                align-items: center;
+
+                h5 {
+                    font-size: 20px;
+                    color: rgb(2, 62, 138);
+                    margin-bottom: 0;
+                    font-weight: 400;
+                }
+
+                p {
+                    font-size: 14px;
+                    margin-bottom: 0;
+                    padding: 5px 0;
+                    color: rgb(108, 117, 125);
+                    font-weight: 500;
+                }
+
+            }
+        }
+
+    }
+}

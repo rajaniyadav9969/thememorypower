@@ -1,0 +1,107 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  /* background-color: #242424; */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --pricolor: rgb(255, 156, 88);
+  --color: #023e8a;
+  --seccolor: #344767;
+  --priBgcolor: #e9fdff;
+}
+
+.container {
+  width: min(90%, 1400px);
+  margin: 0 auto;
+
+  // @media screen and (max-width: 768px) {
+  //   padding: 0;
+  // }
+}
+
+.scrollToTop {
+  position: fixed;
+  bottom: 3rem;
+  right: 0.5rem;
+  z-index: 1;
+
+  button {
+    border: none;
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: var(--pricolor);
+    line-height: 0;
+    padding: 0;
+
+    svg {
+      font-size: 1rem;
+      fill: #fff;
+    }
+  }
+}
+
+.row {
+  @media screen and (max-width: 768px) {
+
+    * {
+      padding: 0;
+    }
+  }
+}
+
+.bookFreebtn {
+  background: rgb(149, 188, 23);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 1px -2px, rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px;
+  border-radius: 10px;
+  padding: 10px 25px;
+  font-weight: 700;
+  font-size: 0.875rem;
+  margin: 0;
+  border: none;
+  color: #fff;
+
+
+  a {
+    text-decoration: none;
+    color: #fff;
+
+    span {
+      padding-right: 0.5rem;
+      font-size: 1.2rem;
+    }
+  }
+
+
+  &:hover {
+    background: rgb(21, 101, 192);
+  }
+}
+
+.message {
+  background-color: #fff3ea !important;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: 1px solid #ff9c58 !important;
+  border-radius: 20px;
+  width: 100%;
+  z-index: 0;
+  padding: 60px;
+
+  @media screen and (max-width: 768px) {
+    padding: 30px 19px 10px;
+  }
+}
+
+
+.modalheader {
+  border-bottom: none;
+}

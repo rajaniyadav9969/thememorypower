@@ -1,0 +1,53 @@
+.contactUsSection {
+    background-image: url(./assets/contactusleftheader.png), url(./assets/contactusrightheader.png);
+    background-position: center left 60px, center right 60px;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 400px, 400px;
+    padding: 154px 25px;
+
+    @media screen and (max-width :900px) {
+        background-position: 0, 100%;
+        background-repeat: no-repeat, no-repeat;
+        background-size: 30%, 30%;
+    }
+
+    .contactheader {
+        @media (min-width: 600px) {
+            padding-left: 24px;
+            padding-right: 24px;
+
+        }
+
+        display: flex !important;
+        height: 100%;
+        margin: 0 auto !important;
+        place-items: center !important;
+
+        .content {
+
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+            place-items: center;
+
+            .heading {
+                font-weight: 600 !important;
+                color: #344767;
+                font-size: 18px !important;
+                font-weight: 700 !important;
+                line-height: 30px !important;
+                margin: 0 !important;
+            }
+
+            .bugreport {
+                margin: 24px 0px 0px;
+                font-family: Roboto, Helvetica, Arial, sans-serif;
+                font-weight: 400;
+                font-size: 1rem;
+                line-height: 1.5;
+                letter-spacing: 0.00938em;
+
+            }
+        }
+    }
+}
